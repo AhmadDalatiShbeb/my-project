@@ -1,0 +1,211 @@
+@Ticket_Booking_System_HostAddress = https:@token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI1IiwidW5pcXVlX25hbWUiOiJhaG1hZCIsIm5iZiI6MTc0NDY0MDAwMiwiZXhwIjoxNzQ0NjUwODAyLCJpYXQiOjE3NDQ2NDAwMDIsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjQiLCJhdWQiOiJ0aWNrZXQtYm9va2luZy1jbGllbnQifQ.MoTOC5JTMgurwKOZiuRmy3LPhyEQoTYozQlcfUjG2nk
+###
+POST {{Ticket_Booking_System_HostAddress}}/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "ahmad",
+  "password": "123456"
+}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "bgb",
+  "password": "123"
+}
+
+###
+GET {{Ticket_Booking_System_HostAddress}}/events
+Accept: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyNSIsInVuaXF1ZV9uYW1lIjoiYWhtYWQiLCJuYmYiOjE3NDQ2NDEzMTEsImV4cCI6MTc0NDY1MjExMSwiaWF0IjoxNzQ0NjQxMzExLCJpc3MiOiJodHRwczovL2xvY2FsaG9zdDo3MjI0IiwiYXVkIjoidGlja2V0LWJvb2tpbmctY2xpZW50In0.1JVEByXnrqBak0q91rjBciL3quf9Rav0pe4vmD1tslQ
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/events
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "New Event",
+  "description": "Event description",
+  "location": "City Hall",
+  "date": "2025-05-01T18:00:00"
+}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/book
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "eventId": 1,
+  "seatNumber": "A1"
+}
+
+###
+GET {{Ticket_Booking_System_HostAddress}}/my-bookings
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "ahmad",
+  "password": "123456"
+}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "ahmad",
+  "password": "123456"
+}
+
+###
+GET {{Ticket_Booking_System_HostAddress}}/events
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/events
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "New Event",
+  "description": "Event description",
+  "location": "City Hall",
+  "date": "2025-05-01T18:00:00"
+}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/book
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "eventId": 1,
+  "seatNumber": "A1"
+}
+
+###
+GET {{Ticket_Booking_System_HostAddress}}/my-bookings
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "ahmad",
+  "password": "123456"
+}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "ahmad",
+  "password": "123456"
+}
+
+###
+GET {{Ticket_Booking_System_HostAddress}}/events
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/events
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "New Event",
+  "description": "Event description",
+  "location": "City Hall",
+  "date": "2025-05-01T18:00:00"
+}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/book
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "eventId": 1,
+  "seatNumber": "A1"
+}
+
+###
+GET {{Ticket_Booking_System_HostAddress}}/my-bookings
+Accept: application/json
+Authorization: Bearer {{token}}
+
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/register
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "ahmad",
+  "password": "123456"
+}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/login
+Content-Type: application/json
+Accept: application/json
+
+{
+  "username": "ahmad",
+  "password": "123456"
+}
+
+###
+GET {{Ticket_Booking_System_HostAddress}}/events
+Accept: application/json
+Authorization: Bearer {{token}}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/events
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "title": "New Event",
+  "description": "Event description",
+  "location": "City Hall",
+  "date": "2025-05-01T18:00:00"
+}
+
+###
+POST {{Ticket_Booking_System_HostAddress}}/book
+Content-Type: application/json
+Authorization: Bearer {{token}}
+
+{
+  "eventId": 1,
+  "seatNumber": "A1"
+}
+
+###
+GET {{Ticket_Booking_System_HostAddress}}/my-bookings
+Accept: application/json
+Authorization: Bearer {{token}}
