@@ -11,6 +11,9 @@
 # Build results
 bin/
 obj/
+*.dll
+*.so
+*.dylib
 [Bb]uild/
 [Ll]og/
 *.log
