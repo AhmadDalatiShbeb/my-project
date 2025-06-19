@@ -45,4 +45,4 @@ ticket-booking-frontend/
 *TicketBookingSystem.AssemblyInfoInputs.cache
 
 # Ignore sensitive appsettings files
-appsettings.json
+*appsettings.json
