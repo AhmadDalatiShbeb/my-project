@@ -1,0 +1,40 @@
+# Visual Studio files
+.vs/
+*.vsidx
+*.suo
+*.user
+*.log
+
+# Build artifacts
+bin/
+obj/
+
+# NuGet packages
+packages/
+
+# Node.js modules (if frontend is not completely ignored)
+node_modules/
+
+# Screenshots or temporary images
+*.png
+*.jpg
+*.jpeg
+*.gif
+
+# Other common temporary files to ignore
+temp/
+tmp/
+*.tmp
+*.bak
+*.sbr
+*.bsc
+*.map
+*.obj
+*.pdb
+*.res
+*.user
+*.vcxproj.filters
+*.sln.docstates
+
+# Frontend directory (if you want to completely ignore it)
+ticket-booking-frontend/
