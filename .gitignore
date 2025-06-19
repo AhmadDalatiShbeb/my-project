@@ -38,3 +38,7 @@ tmp/
 
 # Frontend directory (if you want to completely ignore it)
 ticket-booking-frontend/
+
+# Specific project build artifacts
+*TicketBookingSystem.AssemblyInfo.cs
+*TicketBookingSystem.AssemblyInfoInputs.cache
