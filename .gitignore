@@ -1,15 +1,16 @@
 # Visual Studio files
 .vs/
-*.vsidx
 *.suo
 *.user
 *.log
+*.vsidx
+*.dtbcache.v2 # جديد ليتجاهل ملف الكاش المحدد
 
 # Build artifacts
 bin/
 obj/
 
-# NuGet packages
+# NuGet packages (if applicable)
 packages/
 
 # Node.js modules (if frontend is not completely ignored)
@@ -39,6 +40,6 @@ tmp/
 # Frontend directory (if you want to completely ignore it)
 ticket-booking-frontend/
 
-# Specific project build artifacts
+# Specific project build artifacts (للتأكد إذا لم يتم تجاهلها بـ obj/)
 *TicketBookingSystem.AssemblyInfo.cs
 *TicketBookingSystem.AssemblyInfoInputs.cache
