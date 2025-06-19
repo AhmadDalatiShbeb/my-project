@@ -43,3 +43,6 @@ ticket-booking-frontend/
 # Specific project build artifacts (للتأكد إذا لم يتم تجاهلها بـ obj/)
 *TicketBookingSystem.AssemblyInfo.cs
 *TicketBookingSystem.AssemblyInfoInputs.cache
+
+# Ignore sensitive appsettings files
+appsettings.json

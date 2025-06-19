@@ -25,9 +25,10 @@ public class Program
 
         builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-        StripeConfiguration.ApiKey = "***REMOVED***";
+        
 
-                builder.Services.AddDbContext<AppDbContext>(options =>
+
+        builder.Services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
         builder.Services.AddIdentity<User, IdentityRole>(options =>
@@ -163,6 +164,8 @@ public class Program
         app.MapAdminEndPoints();
         await SeedDataAsync();
 
+        var stripeSecretKey = app.Configuration["Stripe:SecretKey"];
+
         async Task SeedDataAsync()
         {
             using (var scope = app.Services.CreateScope())
@@ -182,7 +185,7 @@ public class Program
                 }
 
                 
-                var adminEmail = "ahmaddalati@gmail.com"; 
+                var adminEmail = "example@gmail.com"; 
                 var adminPassword = "AdminPassword123!"; 
 
                 var adminUser = await userManager.FindByEmailAsync(adminEmail);
