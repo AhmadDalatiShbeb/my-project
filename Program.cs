@@ -164,7 +164,7 @@ public class Program
         app.MapAdminEndPoints();
         await SeedDataAsync();
 
-        var stripeSecretKey = app.Configuration["Stripe:SecretKey"];
+        //var stripeSecretKey = app.Configuration["Stripe:SecretKey"];
 
         async Task SeedDataAsync()
         {
@@ -185,8 +185,8 @@ public class Program
                 }
 
                 
-                var adminEmail = ""; 
-                var adminPassword = ""; 
+               var adminEmail = ""; 
+              var adminPassword = ""; 
 
                 var adminUser = await userManager.FindByEmailAsync(adminEmail);
                 if (adminUser == null)
