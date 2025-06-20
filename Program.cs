@@ -164,7 +164,6 @@ public class Program
         app.MapAdminEndPoints();
         await SeedDataAsync();
 
-        //var stripeSecretKey = app.Configuration["Stripe:SecretKey"];
 
         async Task SeedDataAsync()
         {
