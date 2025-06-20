@@ -185,8 +185,8 @@ public class Program
                 }
 
                 
-                var adminEmail = "ahmad@example.com"; 
-                var adminPassword = "AdminPassword123!"; 
+                var adminEmail = ""; 
+                var adminPassword = ""; 
 
                 var adminUser = await userManager.FindByEmailAsync(adminEmail);
                 if (adminUser == null)
