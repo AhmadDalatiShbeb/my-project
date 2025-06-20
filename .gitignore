@@ -46,3 +46,6 @@ ticket-booking-frontend/
 
 # Ignore sensitive appsettings files
 *appsettings.json
+
+# If you choose to use a separate development settings file, ignore it too
+*appsettings.Development.json
