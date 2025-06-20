@@ -26,7 +26,9 @@ namespace Ticket_Booking_System.EndPoints.Stripe
                 var evt = await db.Events.FindAsync(eventId);
                 if (evt == null) return Results.NotFound("الفعالية غير موجودة");
 
-                var domain = "https:                var options = new SessionCreateOptions
+                var domain = "https: ";
+
+                var options = new SessionCreateOptions
                 {
                     PaymentMethodTypes = new List<string> { "card" },
                     LineItems = new List<SessionLineItemOptions>
@@ -107,7 +109,9 @@ namespace Ticket_Booking_System.EndPoints.Stripe
                                 if (eventEntity == null)
                                     return Results.BadRequest("حدث غير موجود لإنشاء التذكرة.");
 
-                                                                var ticketUrl = $"https:                                var qrBytes = QrCodeGenerator.GenerateQrCode(ticketUrl);
+                                var ticketUrl = $"https:";
+                                
+                                 var qrBytes = QrCodeGenerator.GenerateQrCode(ticketUrl);
 
                                 var qrFileName = $"qr_{booking.Id}_{DateTime.UtcNow.Ticks}.png";
                                 var qrPath = Path.Combine("wwwroot/qrcodes", qrFileName);

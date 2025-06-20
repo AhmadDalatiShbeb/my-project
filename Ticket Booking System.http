@@ -1,4 +1,4 @@
-@Ticket_Booking_System_HostAddress = https:localhost/7224;
+@Ticket_Booking_System_HostAddress = https://localhost:7224
 @token = Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjI1IiwidW5pcXVlX25hbWUiOiJhaG1hZCIsIm5iZiI6MTc0NDY0MDAwMiwiZXhwIjoxNzQ0NjUwODAyLCJpYXQiOjE3NDQ2NDAwMDIsImlzcyI6Imh0dHBzOi8vbG9jYWxob3N0OjcyMjQiLCJhdWQiOiJ0aWNrZXQtYm9va2luZy1jbGllbnQifQ.MoTOC5JTMgurwKOZiuRmy3LPhyEQoTYozQlcfUjG2nk
 ###
 POST {{Ticket_Booking_System_HostAddress}}/register
