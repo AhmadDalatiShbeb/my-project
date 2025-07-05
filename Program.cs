@@ -23,10 +23,9 @@ public class Program
     {
         var builder = WebApplication.CreateBuilder(args);
 
+        builder.Configuration.AddUserSecrets<Program>();
+
         builder.Services.AddAutoMapper(typeof(MappingProfile));
-
-        
-
 
         builder.Services.AddDbContext<AppDbContext>(options =>
         options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
@@ -59,9 +58,6 @@ public class Program
             {
                 options.JsonSerializerOptions.ReferenceHandler = System.Text.Json.Serialization.ReferenceHandler.Preserve;
             });
-
-
-
 
                 builder.Services.AddAuthentication(options =>
         {
@@ -183,9 +179,15 @@ public class Program
                     }
                 }
 
-                
-               var adminEmail = ""; 
-              var adminPassword = ""; 
+
+                var adminEmail = builder.Configuration["Admin:Email"];
+                var adminPassword = builder.Configuration["Admin:password"];
+
+                if (string.IsNullOrEmpty(adminEmail) || string.IsNullOrEmpty(adminPassword))
+                {
+                    throw new InvalidOperationException("Admin credentials are not configured properly.");
+                }
+
 
                 var adminUser = await userManager.FindByEmailAsync(adminEmail);
                 if (adminUser == null)
@@ -214,6 +216,8 @@ public class Program
             }
 
         }
+
+        StripeConfiguration.ApiKey = builder.Configuration["Stripe:SecretKey"];
 
 
         app.Run();

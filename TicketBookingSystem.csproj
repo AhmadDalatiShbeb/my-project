@@ -5,6 +5,7 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <RootNamespace>Ticket_Booking_System</RootNamespace>
+    <UserSecretsId>66518769-a70f-491f-bc45-dac5dad87ef6</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
